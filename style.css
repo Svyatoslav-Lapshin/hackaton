@@ -1,28 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color:#ADD8E6;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;  /*horizontal*/
+    align-items: center; /*vertical*/
+    height: 100vh;  /*screen heigt*/
+
 }
-h1{
-    text-align: center;
-    
-}
+
 header{
     text-align: center;
+    color: white;
+   
 }
-.two-column-layout{
+.container{
+   display: flex;
+   flex-direction: column; /*fix blocks in ordning*/
+   gap: 10px;  /*distance between blocks*/
+   width: auto;
+   
+   
+}
+.block{
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0, 0, 0,0.1);   
+    padding: 15px;
+    gap: 5rem;   
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 5rem;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+    margin: 10px auto;
    
 }
-.two-column-layout img{
-    max-width: 200;
+.block img{
+    max-width: 200px;
     height: auto;
+    border-radius: 10px;
+    margin-right: 5px;
+    gap: 20px;
 }
-.text{
+
+
+ul li{
+    display: flex;
+    align-items: center;
     
-    max-width: 400px;
-   
-   
+
+}
+.choice_Program{
+    max-width: 420px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-right: 50px;
+}
+.hobbies{
+    gap: 10px;
+    margin-right: 75px;
 }
